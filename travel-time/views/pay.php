@@ -70,9 +70,9 @@ $payController = new payController ();
         $expiry_date= $_POST["expiry_date"];
         $cvc= $_POST["cvc"];
 
-        $pay = $payController -> createpay($card_holder, $card_number, $expiry_date,$cvc,$service);
+        $pay = $payController -> createPay($card_holder, $card_number, $expiry_date,$cvc,$service);
 
-        $payController -> addpay ($pay);
+        $payController -> addPay ($pay);
         try {
           
           echo "Data inserted successfully.";
